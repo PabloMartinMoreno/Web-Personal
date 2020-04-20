@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %} 
+
+{% block title %}Sobre mi{% endblock title%} 
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock background %}
+
+{% block headers %} 
+<h1>Acerca de</h1>
+
+<span class="subheading">Biografia</span>
+{% endblock headers %}
+
+{% block content %}
+<div class="row">   
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Pablo Martin Moreno</h2>
+        <ul>
+        <li><p><b>Desarrollador Web Backend.</b></p></li>
+        <li><p>Soy un friki que hizo de su pasatiempo su trabajo y de su trabajo su pasatiempo.</p></li>
+        <li><p>Ex estudiante universitario de ingenieria en informatica, estudiante constante y autónomo en la actualidad.</p></li>
+        </ul>
+    </div>
+</div>
+{% endblock content %}

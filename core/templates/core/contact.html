@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %} 
+
+{% block title %}Contacto{% endblock title %} 
+
+{% block background %}{% load static %}{% static 'core/img/contact-bg.jpg' %}{% endblock background %}
+
+{% block headers %} 
+<h1>Mis datos</h1>
+
+<span class="subheading">Asesoria</span>
+{% endblock headers %}
+
+{% block content %}
+<div class="row">   
+    <div class="col-lg-8 col-md-10 mx-auto">
+        <p><b>¿Tienes interés en contratar mis servicios?</b></p> 
+        <p>Enhorabuena, aprovechemos la tecnología y el mercado para beneficiarnos mutuamente y lograr un fantástico ganar - ganar.</p> 
+        <br>
+        <p><b>Direccion:</b> Argentina - Buenos Aires</p>
+        <p><b>Teléfono:</b> +54 11 2402 7604 (Lunes a viernes de 8 hs a 18 hs [GMT -3])</p>
+        <p><b>Email:</b> pablou90@gmail.com (Disponible las 24 hs)</p>
+    </div>
+</div>
+{% endblock content %}
